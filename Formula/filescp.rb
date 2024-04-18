@@ -4,19 +4,19 @@ class Filescp < Formula
   
     if Hardware::CPU.intel?
       url "https://github.com/x690607895/fileScp/releases/download/release-v1.0.0/fileScp-cli-macos-amd64.tar.gz"
-      sha256 "57005806a8645bfbb7c4e745c15c0089840c5293edd73b7a8934e7eb0243b244"
+      sha256 "dbd8238bee189a2f6d0bcb258b155b4ab954df1aa1968a086b36dba40cb7f5e1"
     elsif Hardware::CPU.arm?
       url "https://github.com/x690607895/fileScp/releases/download/release-v1.0.0/fileScp-cli-macos-arm64.tar.gz"
-      sha256 "6a63ec2e18d0d291ff260144eea6b4a53f95dc516315614bdc2843dd696a16fc"
+      sha256 "5ba188648e384f62827660148e874f0d94729c95a2058d1c665b01b919a7d287"
     end
   
     version "1.0.0"
   
     def install
       if Hardware::CPU.intel?
-        bin.install "fileScp"
+        bin.install "filescp"
       elsif Hardware::CPU.arm?
-        bin.install "fileScp"
+        bin.install "filescp"
       end
     end
   
