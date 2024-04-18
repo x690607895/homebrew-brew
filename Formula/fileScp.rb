@@ -1,4 +1,4 @@
-class fileScp < Formula
+class FileScp < Formula
     desc "a simple file scp"
     homepage "https://github.com/x690607895/fileScp"
   
