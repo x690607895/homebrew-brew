@@ -14,9 +14,9 @@ class fileScp < Formula
   
     def install
       if Hardware::CPU.intel?
-        bin.install "flash-cat"
+        bin.install "fileScp"
       elsif Hardware::CPU.arm?
-        bin.install "flash-cat"
+        bin.install "fileScp"
       end
     end
   
